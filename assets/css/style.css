@@ -1,0 +1,237 @@
+/* Styel that come with the challange */
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+/* My Styling */
+
+* {
+	/* Colors */
+	--primary-color-red: hsla(0, 100%, 67%, 0.05);
+	--primary-color-yellow: hsla(51, 100%, 49%, 0.05);
+	--primary-color-green-teal: hsla(166, 100%, 37%, 0.05);
+	--primary-color-cobalt-blue: hsla(234, 85%, 45%, 0.05);
+
+	/* Gradient Colors */
+
+	--light-stlate-blue: hsl(252, 100%, 67%);
+	--light-royal-blue: hsl(241, 81%, 54%);
+
+	--violete-blue: hsla(256, 72%, 46%, 1);
+	--persian-blue: hsla(241, 72%, 46%, 0);
+
+	/* Neutral Colors */
+
+	--white: hsl(0, 0%, 100%);
+	--pale-blue: hsl(221, 100%, 96%);
+	--light-lavender: hsl(241, 100%, 89%);
+	--dark-gray-blue: hsl(224, 30%, 27%);
+
+	/* Font Size */
+	font-size: 16px;
+	margin: 0;
+}
+
+/* Mobile Layout */
+body {
+	font-family: "Hanken Grotesk", sans-serif;
+	max-width: 375px;
+	margin: 0 auto;
+}
+
+.container,
+.result,
+.result__info_box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.result {
+	background-image: linear-gradient(to top, var(--light-royal-blue), var(--light-stlate-blue));
+	border-radius: 0 0 40px 40px;
+	max-width: 375px;
+}
+
+.result__title {
+	font-size: 1.125rem;
+	font-weight: 700;
+	color: var(--pale-blue);
+	margin-top: 25px;
+}
+
+.result__range {
+	font-weight: 700;
+	color: var(--light-lavender);
+	background-image: linear-gradient(to top, var(--persian-blue), var(--violete-blue));
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 150px;
+	height: 150px;
+	margin-top: 21px;
+}
+
+.result__range span {
+	color: var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3.5rem;
+}
+
+.result__msg {
+	font-size: 1.49rem;
+	font-weight: 700;
+	color: var(--white);
+	margin-top: 16px;
+}
+
+.result__info {
+	color: var(--light-lavender);
+	font-size: 1rem;
+	display: flex;
+	padding: 9px 60px 40px 60px;
+}
+
+/* Summary */
+
+.summary {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 375px;
+}
+
+.summary span {
+	color: var(--dark-gray-blue);
+}
+
+.summary__title {
+	font-size: 1.125rem;
+	font-weight: 700;
+	color: var(--dark-gray-blue);
+	margin: 20px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.summary__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 15px 25px;
+	border-radius: 10px;
+	background-color: var(--pale-blue);
+	margin-bottom: 20px;
+	gap: 75px;
+}
+
+.summary__box_left {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.summary__item:nth-child(2) {
+	background-color: var(--primary-color-red);
+}
+
+.summary__item:nth-child(3) {
+	background-color: var(--primary-color-yellow);
+}
+
+.summary__item:nth-child(4) {
+	background-color: var(--primary-color-green-teal);
+}
+
+.summary__item:nth-child(5) {
+	background-color: var(--primary-color-cobalt-blue);
+}
+
+.btn {
+	background-color: var(--dark-gray-blue);
+	color: var(--white);
+	border: none;
+	border-radius: 30px;
+	padding: 20px 125px;
+	font-size: 1rem;
+	font-weight: 700;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.btn:hover {
+	background-image: linear-gradient(to top, var(--light-royal-blue), var(--light-stlate-blue));
+}
+
+/* Desktop Layout */
+
+@media (min-width: 768px) {
+	body {
+		max-width: 1440px;
+	}
+
+	.container {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.result {
+		border-radius: 40px;
+		max-width: 375px;
+	}
+
+	.result__title {
+		margin-top: 40px;
+	}
+
+	.result__range {
+		margin-top: 30px;
+	}
+
+	.result__msg {
+		margin-top: 30px;
+	}
+
+	.result__info {
+		padding: 20px 60px 40px 60px;
+	}
+
+	.summary {
+		flex-direction: row;
+		justify-content: space-between;
+		max-width: 1440px;
+		margin-top: 50px;
+	}
+
+	.summary__title {
+		margin: 0;
+		margin-right: 50px;
+	}
+
+	.summary__item {
+		margin: 0;
+		margin-right: 50px;
+	}
+
+	.summary__item:nth-child(2) {
+		margin-top: 50px;
+	}
+
+	.btn {
+		margin-top: 50px;
+	}
+}
