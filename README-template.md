@@ -27,7 +27,9 @@ Users should be able to:
 
 ### Preview
 
-![](.assets/images/md-images/preview.png)
+<div align="center">
+ <img src="./assets/md-images/preview.png">
+</div>
 
 ### Links
 
